@@ -1,7 +1,6 @@
-package esp.inventory.library
+package esp.inventory.library.test.repository
 
-import org.junit.Assert
-import org.junit.Test
+
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
@@ -9,11 +8,11 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @DataJpaTest
-class CategoryRepositoryTest {
+class LibraryRepositoryTest {
 
     @Autowired
-    private var repository: CategoryRepository? = null
-
+    private var repository: LibraryRepositoryTest? = null
+/*
     @Test
     fun saveTest() {
         val category = repository?.save(CategoryEntity(categoryName = "Primeira Categoria"))
@@ -45,4 +44,6 @@ class CategoryRepositoryTest {
         val cat = repository!!.findById(id)
         Assert.assertEquals( true, cat.isEmpty)
     }
+
+ */
 }

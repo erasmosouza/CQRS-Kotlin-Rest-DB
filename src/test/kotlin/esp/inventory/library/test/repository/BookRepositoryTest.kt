@@ -1,4 +1,4 @@
-package esp.inventory.library
+package esp.inventory.library.test.repository
 
 import org.junit.Assert
 import org.junit.Test
@@ -7,10 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.test.context.junit4.SpringRunner
 
+
 @RunWith(SpringRunner::class)
 @DataJpaTest
 class BookRepositoryTest {
-
+/*
     @Autowired
     private var repository: BookRepository? = null
 
@@ -19,7 +20,11 @@ class BookRepositoryTest {
 
     @Test
     fun saveTest() {
-        val category: CategoryEntity = categoryRepository!!.save(CategoryEntity(categoryName = "Primeira Categoria"))
+        val category: CategoryEntity = categoryRepository!!.save(
+            CategoryEntity(
+                categoryName = "Primeira Categoria"
+            )
+        )
         Assert.assertNotEquals(0L, category.id)
 
         val book: BookEntity = repository!!.save(
@@ -75,4 +80,6 @@ class BookRepositoryTest {
         val oldBook = repository!!.findById(id)
         Assert.assertEquals( true, oldBook.isEmpty)
     }
+
+ */
 }

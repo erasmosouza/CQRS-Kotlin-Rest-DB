@@ -1,4 +1,4 @@
-package esp.inventory.library
+package esp.inventory.library.test.repository
 
 import javax.persistence.*
 
@@ -16,6 +16,6 @@ class BookEntity (
     var description: String = "",
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = arrayOf(CascadeType.MERGE))
-    @JoinColumn(name = "category_id")
-    var category: CategoryEntity = CategoryEntity()
+    @JoinColumn(name = "library_id")
+    var library: LibraryEntity = LibraryEntity()
 )
