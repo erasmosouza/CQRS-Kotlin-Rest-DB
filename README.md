@@ -18,7 +18,7 @@ Test it:
 
 ## Testando o Docker
 Agora que temos o jar da aplicação, vamos criar o docker:
->docker build . -t inventory-api:1.1
+>docker build . -t inventory-api:1.0
 
 Checar se a criação foi com sucesso:
 >docker images
